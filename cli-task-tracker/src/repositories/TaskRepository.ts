@@ -27,7 +27,7 @@ export class TaskRepository {
     }
     delete(id: string): boolean {
         let i; 
-        for(i = 0; i<this.tasks.length; i++){ 
+        for(i = 1; i<=this.tasks.length; i++){ 
             if(this.tasks[i].id === id) 
                 break; 
             } 
