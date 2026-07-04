@@ -5,7 +5,7 @@ import path from "node:path";
 
 
 export class TaskRepository {
-    private FILE_PATH = path.join(process.cwd(), "data", "tasks.json");
+    private FILE_PATH = path.join(process.cwd(), "src/data", "tasks.json");
     private async readTasks(): Promise<Task[]> {
         try{
             const rawData = await fs.readFile(this.FILE_PATH, 'utf-8');
