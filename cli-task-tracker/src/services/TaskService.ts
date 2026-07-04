@@ -1,5 +1,6 @@
 import { Task } from "../models/Task";
 import { TaskRepository } from "../repositories/TaskRepository";
+import { TaskStatus } from "../types/TaskTypes";
 
 export class TaskService {
     constructor(private taskRepo: TaskRepository) {}
@@ -40,5 +41,9 @@ export class TaskService {
     }
     async deleteTask(id: string): Promise<boolean>{
         return this.taskRepo.delete(id);
+    }
+    async getTaskByStatus(status: TaskStatus): Promise<Task[]>{
+        const tasks = this.taskRepo.getAll();
+        return (await tasks).filter(task => task.status===status);
     }
 }
