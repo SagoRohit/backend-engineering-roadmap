@@ -1,3 +1,4 @@
+#!/usr/bin/env node
 import { CommandHandler } from "./commands/CommandHandler";
 import { TaskRepository } from "./repositories/TaskRepository";
 import { TaskService } from "./services/TaskService";
