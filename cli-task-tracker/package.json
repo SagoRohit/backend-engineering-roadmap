@@ -9,6 +9,9 @@
     "build": "tsc",
     "start": "node dist/index.js"
   },
+  "bin":{
+    "task-cli": "./dist/index.js"
+  },
   "keywords": [],
   "author": "",
   "license": "ISC",
