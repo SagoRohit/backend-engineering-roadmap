@@ -1,0 +1,18 @@
+1. create the project:
+npm init -y
+2. install typescript package:
+npm install --save-dev typescript
+3. install @types/node : so that it can understand node enviroments
+npm install --save-dev @types/node
+4. .ts file compilation:
+npm install -D tsx
+5. execution:
+npx tsx script.ts
+
+
+we can run our program two way:
+directly: npx tsx script.ts
+
+production:
+npm run build
+node dist/index.js
