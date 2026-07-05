@@ -265,7 +265,7 @@ Done
 Clone the repository
 
 ```bash
-git clone <repository-url>
+git clone https://github.com/SagoRohit/backend-engineering-roadmap/tree/main/cli-task-tracker
 ```
 
 Go inside the project
